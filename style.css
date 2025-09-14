@@ -1,0 +1,140 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #f4f0e8;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: #3b2e2a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 6px double #c0a878;
+}
+
+header h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-style: italic;
+  color: #e2d7c4;
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+  background: #e2d7c4;
+  padding: 0.8rem;
+  border-bottom: 2px solid #c0a878;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3b2e2a;
+  margin: 0 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8c6d4f;
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Article Preview Cards */
+article {
+  background: #fff;
+  border: 1px solid #d4c4b0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
+}
+
+article h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #c0a878;
+  padding-bottom: 0.4rem;
+  color: #3b2e2a;
+}
+
+/* Stylish Article Links */
+article h2 a {
+  text-decoration: none;
+  color: #3b2e2a;
+  position: relative;
+}
+
+article h2 a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background: #8c6d4f;
+  transition: width 0.3s ease;
+}
+
+article h2 a:hover {
+  color: #8c6d4f;
+}
+
+article h2 a:hover::after {
+  width: 100%;
+}
+
+/* "Read More" Link */
+article p a {
+  font-weight: bold;
+  color: #3b2e2a;
+  text-decoration: none;
+  border-bottom: 1px dashed #c0a878;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+article p a:hover {
+  color: #8c6d4f;
+  border-color: #8c6d4f;
+}
+
+/* Footer */
+footer {
+  background: #3b2e2a;
+  color: #e2d7c4;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 6px double #c0a878;
+}
